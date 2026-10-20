@@ -245,7 +245,7 @@
         <div class="roadmap" aria-label="Anniversary date route">
           <div class="route-stop" data-stop="1"><strong>11:00 a.m. · I’ll pick you up</strong><span>Coffee and your favourite flowers ☕🌷</span></div>
           <div class="route-stop" data-stop="2" hidden><strong>A walk through “our place”</strong><span>Sundar Nursery</span></div>
-          <div class="route-stop" data-stop="3" hidden><strong>Lunch at “our place”</strong><span>Big Chill</span></div>
+          <div class="route-stop" data-stop="3" hidden><strong>Lunch at “our place”</strong><span>Olive</span></div>
           <div class="route-stop" data-stop="4" hidden><strong>Our favourite dessert</strong><span>At Big Chill, of course 🍰</span></div>
           <div class="route-stop" data-stop="5" hidden><strong>A little drive together</strong><span>Holding hands and listening to our songs ♡</span></div>
           <div class="route-stop" data-stop="♡" hidden><strong>One more kiss where it all began</strong><span>Back to the place of our first kiss</span></div>
@@ -327,16 +327,16 @@
       });
       root.querySelector('#to-letter').addEventListener('click', () => { video.pause(); show('letter'); });
       const quizQuestions = [
-        { q: 'Which two food mishaps belong in our funny-memory collection?', options: ['We accidentally ordered a fried burger, and Prans nearly puked after trying broccoli', 'We accidentally ordered broccoli, and Gunz nearly puked after trying a burger', 'We both ordered the wrong kachodi'], answer: 0 },
-        { q: 'What’s our inside joke?', options: ['“Eight minutes”', '“Peed in pants”', '“Where’s the Swifty?”'], answer: 1 },
+        { q: 'Which two food mishaps belong in our funny-memory collection?', options: ['We accidentally ordered broccoli, and Gunz nearly puked after trying a burger', 'We accidentally ordered a fried burger, and Prans nearly puked after trying broccoli', 'We both ordered the wrong kachodi'], answer: 1 },
+        { q: 'What’s our inside joke?', options: ['“Eight minutes”', '“Where’s the Swifty?”', '“Peed in pants”'], answer: 2 },
         { q: 'What’s our song?', options: ['“Lover” by Taylor Swift', '“Perfect” by Ed Sheeran', '“All of Me” by John Legend'], answer: 0 },
         { q: 'Which kachodi does Prans prefer: Rawat or Shankar Samosa?', options: ['Shankar Samosa', 'Rawat', 'Both equally'], answer: 1 },
-        { q: 'Where was our first date, and what was Prans wearing?', options: ['Sundar Nursery, green CK shirt', 'A café, blue denim jacket', 'Near the stadium, navy polo'], answer: 0 },
+        { q: 'Where was our first date, and what was Prans wearing?', options: ['A café, blue denim jacket', 'Near the stadium, navy polo', 'Sundar Nursery, green CK shirt'], answer: 2 },
         { q: 'Where was our Swifty parked when we shared our first kiss?', options: ['Near the stadium', 'Outside Sundar Nursery', 'By a café'], answer: 0 },
-        { q: 'What car were we in?', options: ['A Maruti Suzuki Swift', 'A Maruti Suzuki Baleno', 'A Hyundai i20'], answer: 0 },
-        { q: 'What did Gunz say that gave Prans the courage to kiss her?', options: ['“I will be leaving in 8 minutes”', '“Let’s go for a drive”', '“We have all the time in the world”'], answer: 0 },
+        { q: 'What car were we in?', options: ['A Hyundai i20', 'A Maruti Suzuki Swift', 'A Maruti Suzuki Baleno'], answer: 1 },
+        { q: 'What did Gunz say that gave Prans the courage to kiss her?', options: ['“Let’s go for a drive”', '“We have all the time in the world”', '“I will be leaving in 8 minutes”'], answer: 2 },
         { q: 'When did Prans first text Gunz?', options: ['7 January at 11:24 p.m.', '7 January at 11:14 p.m.', '8 January at 11:24 p.m.'], answer: 0 },
-        { q: 'When did Gunz first tell Prans she likes him?', options: ['21 October', '7 January', '28 October'], answer: 2 }
+        { q: 'When did Gunz first tell Prans she likes him?', options: ['21 October', '28 October', '7 January'], answer: 1 }
       ];
       let quizIndex = 0;
       const quizIntro = root.querySelector('#quiz-intro');
